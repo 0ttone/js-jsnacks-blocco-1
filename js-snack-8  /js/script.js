@@ -4,19 +4,17 @@
 
 
 var askNumber = prompt('inserisci un numero di 4 cifre');
-var sumNumber ;
+var sum = 0
 
-arrayNumber.push(askNumber)
-arrayNumber=[]
+while (askNumber.length < 4){
+      askNumber = prompt('inserisci un numero di 4 cifre');
 
-console.log
-
-for (var x = 0; x <4; x++){
-      if askNumber
 }
-      
 
-      console.log(x);
+for (i = 0; i < askNumber.length; i++){
+      sum += parseInt(askNumber[i])
+}
+document.getElementById('output').innerHTML += sum;
 
 
 
@@ -32,28 +30,28 @@ e calcola la somma di tutte le cifre che compongono il numero.
 restituite un alert)
 */
 
-var userNumber = prompt('Inserisci un numero di 4 cifre');
+// var userNumber = prompt('Inserisci un numero di 4 cifre');
 
-var inputLen = userNumber.length;
+// var inputLen = userNumber.length;
 
-if (inputLen !== 4) {
+// if (inputLen !== 4) {
 
-    alert('Ehi! Devi inserire un numero di 4 cifre');
+//     alert('Ehi! Devi inserire un numero di 4 cifre');
 
-} else if (isNaN(userNumber)) {
+// } else if (isNaN(userNumber)) {
     
-    alert("L'input deve essere obbligatoriamente un numero.");
+//     alert("L'input deve essere obbligatoriamente un numero.");
 
-} else {
+// } else {
 
-    var result = 0;
+//     var result = 0;
 
-    for (var i = 0; i < inputLen; i++) {
-        result += parseInt(userNumber[i])
-    }
+//     for (var i = 0; i < inputLen; i++) {
+//         result += parseInt(userNumber[i])
+//     }
 
-    console.log(result);
-}
+//     console.log(result);
+// }
        
       
 
